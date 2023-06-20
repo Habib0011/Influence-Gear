@@ -1,0 +1,135 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+   
+}
+/* Header part start */
+.head-influence{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.menu{
+    margin: 15px;
+    display: flex;
+}
+.head-h2{
+    margin-left: 50px;
+}
+.head-link a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+}
+.icons i{
+    margin-right: 20px;
+}
+/* Header part End */
+
+
+/* main start */
+/* main section first start */
+.sec-both{
+    display: flex; 
+    width: 100%;
+    margin-bottom: 100px;
+}
+.sec-text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+     
+}
+.sec-text p{
+    margin-bottom: 30px;
+
+}
+.sec-text a{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 15px;
+    color: #ffff;
+    border-radius: 25px;
+    
+}
+.sec-text{
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.sec-pic{
+    width: 50%;
+}
+.sec-pic img{
+    width: 80%;
+    border: 4px solid rgba(135, 206, 250, 0.214);
+    border-radius: 50%;
+    padding: 10px;
+}
+.icons-main{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+/* main section first end */
+/* main end */
+
+/* Popular Section Start */
+.popular .algn{
+  text-align: center;
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+
+.popular-pics{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    
+}
+.pic-dv img{
+    width: 100%;
+}
+.pic-dv{
+    border: 15px solid rgb(243, 236, 236);
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 10px 10px 30px;
+}
+.popular .see{
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+    margin-top: 40px;
+}
+.see span{
+    margin-left: 10px;
+}
+/* Popular Section end */
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .sec-both{
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px;
+    }
+    .popular-pics{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .icons-main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .icons-main img{
+        margin-left: 30px;
+    }
+    
+}
